@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.castro.api.domain.model.Pessoa;
 import com.castro.api.domain.repository.PessoaRepository;
+import com.castro.api.domain.service.PessoaService;
 
 import lombok.AllArgsConstructor;
 
@@ -27,6 +28,7 @@ public class PessoaController {
 
 
 	private PessoaRepository pessoaRepository;
+	private PessoaService pessoaService;
 
 	@GetMapping
 	public List<Pessoa> listar() {
@@ -43,7 +45,7 @@ public class PessoaController {
 	@PostMapping
 	@ResponseStatus(HttpStatus.CREATED)
 	public Pessoa adicionar(@Valid @RequestBody Pessoa pessoa) {
-		return pessoaRepository.save(pessoa);
+		return pessoaService.salvar(pessoa);
 	}
 
 	@PutMapping("/{pessoaId}")
@@ -53,7 +55,7 @@ public class PessoaController {
 		}
 
 		pessoa.setId(pessoaId);
-		pessoa = pessoaRepository.save(pessoa);
+		pessoa = pessoaService.salvar(pessoa);
 
 		return ResponseEntity.ok(pessoa);
 	}
@@ -63,7 +65,7 @@ public class PessoaController {
 		if(!pessoaRepository.existsById(pessoaId)) {
 			return ResponseEntity.notFound().build();
 		}
-		pessoaRepository.deleteById(pessoaId);
+		pessoaService.remover(pessoaId);
 
 		return ResponseEntity.noContent().build();
 	}
