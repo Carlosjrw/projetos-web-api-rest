@@ -21,7 +21,11 @@ Inicie adicionando um usuario no banco:
 }
 
 POST http://localhost:8080/pessoas [cadastra uma nova pessoa]
+
 GET http://localhost:8080/pessoas [lista todas as pessoas]
+
 GET http://localhost:8080/pessoas/{id} [lista um pessoa por ID]
+
 PUT http://localhost:8080/pessoas/{id} [atualiza os dados de um pessoa]
+
 DELETE http://localhost:8080/pessoas/{id} [remove um pessoa por ID]
