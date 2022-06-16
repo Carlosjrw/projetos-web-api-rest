@@ -1,11 +1,11 @@
-package com.castro.api.domain.service;
+package com.castro.projetosweb.domain.service;
 
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.castro.api.domain.exception.NegocioException;
-import com.castro.api.domain.model.Pessoa;
-import com.castro.api.domain.repository.PessoaRepository;
+import com.castro.projetosweb.domain.exception.NegocioException;
+import com.castro.projetosweb.domain.model.Pessoa;
+import com.castro.projetosweb.domain.repository.PessoaRepository;
 
 import lombok.AllArgsConstructor;
 

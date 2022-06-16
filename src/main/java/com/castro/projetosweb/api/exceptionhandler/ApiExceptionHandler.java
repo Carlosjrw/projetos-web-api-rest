@@ -1,4 +1,4 @@
-package com.castro.api.exceptionhandler;
+package com.castro.projetosweb.api.exceptionhandler;
 
 import java.time.LocalDateTime;
 
@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
-import com.castro.api.domain.exception.NegocioException;
+import com.castro.projetosweb.domain.exception.NegocioException;
 
 import lombok.AllArgsConstructor;
 

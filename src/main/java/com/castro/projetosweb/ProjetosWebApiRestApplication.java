@@ -1,4 +1,4 @@
-package com.castro.api;
+package com.castro.projetosweb;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

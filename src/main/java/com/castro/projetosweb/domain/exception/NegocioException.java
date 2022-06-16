@@ -1,4 +1,4 @@
-package com.castro.api.domain.exception;
+package com.castro.projetosweb.domain.exception;
 
 public class NegocioException extends RuntimeException {
 

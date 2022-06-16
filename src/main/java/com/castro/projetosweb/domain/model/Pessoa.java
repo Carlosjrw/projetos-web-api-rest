@@ -1,4 +1,4 @@
-package com.castro.api.domain.model;
+package com.castro.projetosweb.domain.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

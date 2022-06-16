@@ -1,4 +1,4 @@
-package com.castro.api.domain.repository;
+package com.castro.projetosweb.domain.repository;
 
 import java.util.List;
 import java.util.Optional;
@@ -6,7 +6,7 @@ import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.castro.api.domain.model.Pessoa;
+import com.castro.projetosweb.domain.model.Pessoa;
 
 @Repository
 public interface PessoaRepository extends JpaRepository<Pessoa, Long>{

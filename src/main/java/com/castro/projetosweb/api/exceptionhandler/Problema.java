@@ -1,4 +1,4 @@
-package com.castro.api.exceptionhandler;
+package com.castro.projetosweb.api.exceptionhandler;
 
 import java.time.LocalDateTime;
 import java.util.List;

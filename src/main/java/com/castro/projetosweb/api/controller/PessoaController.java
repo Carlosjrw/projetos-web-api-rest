@@ -1,4 +1,4 @@
-package com.castro.api.controller;
+package com.castro.projetosweb.api.controller;
 
 import java.util.List;
 import javax.validation.Valid;
@@ -15,9 +15,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.castro.api.domain.model.Pessoa;
-import com.castro.api.domain.repository.PessoaRepository;
-import com.castro.api.domain.service.PessoaService;
+import com.castro.projetosweb.domain.model.Pessoa;
+import com.castro.projetosweb.domain.repository.PessoaRepository;
+import com.castro.projetosweb.domain.service.PessoaService;
 
 import lombok.AllArgsConstructor;
 
